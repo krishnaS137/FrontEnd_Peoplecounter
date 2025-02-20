@@ -1,2 +1,2 @@
-let myage=21;
+let myage=20;
 console.log(myage);
