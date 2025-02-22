@@ -1,14 +1,6 @@
-let myage=19;
-console.log(myage);
-let bonuspoints=50;
-console.log(bonuspoints);
-bonuspoints=bonuspoints+50;
-
-console.log(bonuspoints);
-
-bonuspoints=bonuspoints-75;
-
-console.log(bonuspoints);
-bonuspoints=bonuspoints+45;
-
-console.log(bonuspoints);
+//Making changes in the js for writing a fucntion
+function logoutnumber(){
+    console.log(42);
+}
+//calling the function
+logoutnumber();
