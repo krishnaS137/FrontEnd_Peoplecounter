@@ -19,11 +19,23 @@
 // console.log(result);
 
 //creating a function that increments a given number when called4
-let number=10;
-function increments(){
-    number=number+1;  
+// let number=10;
+// function increments(){
+//     number=number+1;  
+// }
+// increments();
+// increments();
+// increments();
+// console.log(number);
+
+// creating a function for the people counter 
+let count=0;
+function incrementcount(){
+    document.getElementById("count-el").innerText=++count;
 }
-increments();
-increments();
-increments();
-console.log(number);
+
+//ccreating a function that logs out the count when callled
+
+function save(){
+    alert("The counter has been updated successfully to " + count);
+}
