@@ -28,14 +28,46 @@
 // increments();
 // console.log(number);
 
-// creating a function for the people counter 
+//creating a function for the people counter 
 let count=0;
+let countEl=document.getElementById("count-el");
 function incrementcount(){
-    document.getElementById("count-el").innerText=++count;
+    countEl.innerText=++count;
 }
 
 //ccreating a function that logs out the count when callled
-
+let saved=document.getElementById("save-el")
 function save(){
+    saved.innerHTML+=count +"-";
     alert("The counter has been updated successfully to " + count);
+}
+
+//working with strings
+// let string="You have three new notifications";
+// console.log(string);
+//concatenating two strings
+// let myname="Krishna";
+// let greeting="Hello, My name is ";
+// let mygreeting= greeting+myname;
+// console.log(mygreeting);
+
+let welcomeEl= document.getElementById("welcome-el");
+let myname="Krishna";
+let welcome="You are welcome to the website made by ";
+
+welcomeEl.innerText=welcome+myname;
+
+//adding an emoji at the end of the string using another function;
+function addEmoji(){
+    let emoji="😊";
+    welcomeEl.innerText+=emoji;
+}
+
+//creating a reset button function
+
+function reset(){
+    count=0;
+    countEl.innerText=count;
+    saved.innerHTML="Saved_Entries: ";
+    welcomeEl.innerText=welcome+myname;
 }

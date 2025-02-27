@@ -32,9 +32,16 @@ button{
 
 #increment-btn{
     background: darkred;
-     
 }
 
 #save-btn{
     background: darkblue;
+}
+
+#add-btn{
+    background-color: darkgreen;
+}
+
+#reset-btn{
+    background-color: darkorange;
 }
